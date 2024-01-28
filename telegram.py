@@ -25,13 +25,11 @@ def getip(message):
     info=getinfo(ip)
     bot.send_message(message.chat.id, info)
 
-"""def hello(func):
-    print("hello")
-    func()
-    print("good")
-@hello
-def goodb():
-    print("test")"""
+def generator_keyboards(ListNameBTN,NumberColumns=2):
+    keyboards=telebot.types.ReplyKeyboardMarkup(row_width=NumberColumns,resize_keyboard=True)
+    btn_names=[telebot.types.KeyboardButton(text=x) for x in ListNameBTN]
+    keyboards.add(*btn_names)
+    return keyboards
 
 if __name__=="__main__":
     bot.infinity_polling()
