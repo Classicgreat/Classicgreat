@@ -2,7 +2,7 @@ import telebot
 from telebot import types
 #import requests
 
-token="6986062237:AAEtRLUsUoXpuoAleCubfdEZmKwnpjVSsEg"
+token=""
 
 bot=telebot.TeleBot(token)
 
