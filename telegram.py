@@ -1,5 +1,6 @@
 import telebot
 from telebot import types
+from password import give_item
 #import requests
 
 token=""
@@ -30,7 +31,7 @@ def getip(message):
 def start(message):
     keyboard=types.InlineKeyboardMarkup()
     keyboard.add(types.InlineKeyboardButton("+ Play",callback_data="play"))
-    bot.send_message(message.chat.id,"hello",reply_markup=keyboard)
+    bot.send_message(message.chat.id, f"hello, {message.from_user.first_name}",reply_markup=keyboard)
     #print(message)
     #msg=bot.send_message(message.chat.id,"hello",reply_markup=generator_keyboards(["meny","exit"]))
     #bot.reply_to(message,"Сверху лох")
@@ -52,8 +53,9 @@ def callback_handler(call):
         markup=types.InlineKeyboardMarkup()
         btn1=types.InlineKeyboardButton("- Stop",callback_data="stop")
         btn2=types.InlineKeyboardButton("-___-",callback_data="smile")
-        btn3=types.InlineKeyboardButton("text",callback_data="text")
-        markup.add(btn1,btn2,btn3)
+        btn3=types.InlineKeyboardButton("Text",callback_data="text")
+        btn4=types.InlineKeyboardButton("Email",callback_data="email")
+        markup.add(btn1,btn2,btn3,btn4)
         bot.edit_message_reply_markup(chat_id=call.message.chat.id,message_id=call.message.message_id,reply_markup=markup)
     elif call.data=="stop":
         markup=types.InlineKeyboardMarkup()
@@ -61,8 +63,11 @@ def callback_handler(call):
         bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,text="CLASSIC",reply_markup=markup)
     elif call.data=="smile":
        bot.send_message(call.message.chat.id, ":)")
+       #bot.send_message(call.message.chat.id, "https://catherineasquithgallery.com/uploads/posts/2021-03/1614612233_137-p-fon-dlya-fotoshopa-priroda-209.jpg")
     elif call.data=="text":
         msg=bot.send_message(call.message.chat.id,"Enter Text:")
         bot.register_next_step_handler(msg, gettext)
+    elif call.data=="email":
+        bot.send_message(call.message.chat.id, f"Your email generated: {give_item()}@your_mail.com")
 if __name__=="__main__":
     bot.infinity_polling()

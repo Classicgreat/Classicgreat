@@ -37,5 +37,7 @@ items={
     "suhestv":["sas",],
     "nar":["pooring",]
 }
-print(f'Your email: {give_item()}@{mail()}')
-print(f'Your password:{generate(int(input("Enter lenth>>")),choosing([int(input(f"Add {i}?>>")) for i in alf.keys()]))}')
+def email():return f'{give_item()}@{mail()}'
+def password():return f'{generate(int(input("Enter lenth>>")),choosing([int(input(f"Add {i}?>>")) for i in alf.keys()]))}'
+#print(f'Your email: {email()}')
+#print(f'Your password:{password()}')
