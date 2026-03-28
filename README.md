@@ -1,10 +1,19 @@
-## Hi there 👋
+Hello world 👋
+
+I`m Vlados, a programmer from Russia🇷🇺.
+
+I write programs for any sort of stuff📱💻🖥️.
+
+💡 New ideas constantly come into my head and I rush to implement them through code⌨️.
+
+🪄 My main tech stack is VS_Code/VS, Termux, Helix, Linux console, Unity.
+🖌️ I use Figma to draw design, draw.io to diagram the structure of the program and database.
+
+💽 I have a huge base of my projects written in different languages.
+
+🏵️ I’m currently learning some more about C/C++.
 
 <!--
-**Classicgreat/Classicgreat** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
 - 👯 I’m looking to collaborate on ...
