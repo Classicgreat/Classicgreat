@@ -2,8 +2,6 @@
 <h3 align="center">Student-Programmer | C/C++, Python, Java, Javascript, C#, Docker</h3>
 
 <p align="center">
-  <a href="https://github.com/Classicgreat">
-    <img src="https://komarev.com/ghpvc/?username=Classicgreat&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
   </a>
   <a href="https://github.com/Classicgreat?tab=followers">
     <img src="https://img.shields.io/github/followers/Classicgreat?label=Followers&style=social" alt="GitHub followers" />
